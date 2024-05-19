@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishik's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c03ab062e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ------------------Swiper Css----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+     <!-- =====================================Style Switcher===================================== -->
+     <input type="radio" name="color" id="color-1">
+     <input type="radio" name="color" id="color-2">
+     <input type="radio" name="color" id="color-3">
+     <input type="radio" name="color" id="color-4">
+     <input type="radio" name="color" id="color-5">
+     <input type="radio" name="color" id="color-6">
+     <input type="radio" name="color" id="color-7">
+     <input type="radio" name="color" id="color-8">
+     <input type="radio" name="color" id="color-9">
+     <input type="radio" name="color" id="color-10">
+     <input type="checkbox" name="" id="toggler">
+     <input type="checkbox" name="" id="day-night">
+ 
+     <div class="style_switcher">
+       <label for="toggler" class="style_switcher_toggler">
+         <i class="fa-solid fa-gear fa-spin"></i>
+       </label>
+       <label for="day-night" class="style_switcher_theme">
+         <i class="fa-solid fa-sun"></i>
+         <i class="fa-solid fa-moon"></i>
+       </label>
+ 
+       <h3 class="style_switcher_title">Theme Colors</h3>
+       <div class="style_switcher_colors">
+         <label for="color-1" class="color-1 color"></label>
+         <label for="color-2" class="color-2 color"></label>
+         <label for="color-3" class="color-3 color"></label>
+         <label for="color-4" class="color-4 color"></label>
+         <label for="color-5" class="color-5 color"></label>
+         <label for="color-6" class="color-6 color"></label>
+         <label for="color-7" class="color-7 color"></label>
+         <label for="color-8" class="color-8 color"></label>
+         <label for="color-9" class="color-9 color"></label>
+         <label for="color-10" class="color-10 color"></label>
+ 
+       </div>
+     </div>
+    <!-- ===============================Header and Nav bar section=============================== -->
+    <header class="header">
+      <nav class="nav">
+        <div class="navbar">
+          <div class="navbar_logo">
+            <div class="nav_bar_heading">
+              <h3>T Rishik Goud</h3>
+            </div>
+            <div class="nav_menu_btn" id="menu_btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav_links" id="nav-links">
+            <li class="nav__items">
+              <a href="#home" class="nav__links active__link">Home</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#about" class="nav__links">About</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#services" class="nav__links">Services</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#skills" class="nav__links">Skills</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#portfolio" class="nav__links">Projects</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#contact" class="nav__links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- =============================Home Section================================= -->
+      <section class="home" id="home">
+        <div class="home_container container grid">
+          <div class="home_details">
+            <span class="home_small home_ani">Hello</span>
+            <h1 class="home_name home_ani">
+              <span>I'm</span> T Rishik Goud <br />
+              a <span>Frontend Web Developer</span>
+            </h1>
+            <!-- <p class="home_description">Iam a passionate web developer dedicated to creating innovative and user-friendly web solutions. I believe in the power of technology to transform businesses and improve people's lives, and I'm committed to delivering high-quality, efficient, and scalable web applications that exceed client expectations</p> -->
+            <p class="home_description home_ani">
+              Currently pursuing my Bachelor of Computer Applications at London
+              Management Academy, exploring core concepts of
+              <span>IT Technology</span> & <span>Computer Science...</span>
+            </p>
+            <div class="home_links">
+              <!-- <div>
+                <a href="#home" >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div> -->
+              <div class="home_ani1">
+                <a href="https://twitter.com/TallaRishi52356" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="home_ani1">
+                <a
+                  href="https://www.instagram.com/rishik_goud11/?hl=en"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="home_ani1">
+                <a
+                  href="https://www.linkedin.com/in/rishik-goud-talla/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="home_ani1">
+                <a href="https://github.com/rishikgoud" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="home_btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#portfolio" class="btn btn_transparant">Download CV</a>
+            </div>
+          </div>
+          <div class="home_img">
+            <img
+              src="assets/images/main_img1.png"
+              class="home_main_img home_ani_img"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================About Section======================= -->
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img
+              src="assets/images/profile_img2 gray bg.jpg"
+              alt=""
+              class="about_img_main"
+            />
+            <img
+              src="assets/images/profile_img2 gray bg.jpg"
+              alt=""
+              class="about_img_main"
+            />
+            <img
+              src="assets/images/profile_img2 gray bg.jpg"
+              alt=""
+              class="about_img_main"
+            />
+            <img
+              src="assets/images/profile_img2 gray bg.jpg"
+              alt=""
+              class="about_img_main"
+            />
+          </div>
+          <div class="about_content">
+            <p class="about_who">Who am I?</p>
+            <h1 class="about_head">
+              I'm T Rishik Goud, a Frontend Web Developer <br />and Web
+              Developer
+            </h1>
+            <p class="about_detail">
+              Currently pursuing my Bachelor's in Computer Applications at
+              London Management Academy. With a fervent passion for technology
+              and a keen eye for innovation, my aspiration is to carve a path as
+              a proficient Full Stack Developer. Diving deep into Frontend
+              Development, I'm constantly refining my skills with HTML, CSS, and
+              JavaScript. Each project is a chance to push my limits, focusing
+              on precision and creating smooth user experiences.
+            </p>
+            <ul class="about_data">
+              <li class="about_item">
+                <h3 class="data_title">Name:</h3>
+                <span class="data_description">T Rishik Goud</span>
+              </li>
+              <li class="about_item">
+                <h3 class="data_title">Age:</h3>
+                <span class="data_description">17 Years</span>
+              </li>
+              <li class="about_item">
+                <h3 class="data_title">From:</h3>
+                <span class="data_description">Hyderabad, India</span>
+              </li>
+              <li class="about_item">
+                <h3 class="data_title">Email:</h3>
+                <span class="data_description data_description_link"
+                  >goudrishik2006@gmail.com</span
+                >
+              </li>
+            </ul>
+            <div class="about_btns">
+              <a href="" class="btn">Download CV</a>
+
+              <div class="about_social_btns">
+                <a
+                  href="https://www.instagram.com/rishik_goud11/?hl=en"
+                  class="about_social_btn"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://twitter.com/TallaRishi52356"
+                  target="_blank"
+                  class="about_social_btn"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rishik-goud-talla/"
+                  class="about_social_btn"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/rishikgoud"
+                  target="_blank"
+                  class="about_social_btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================Services Section================================== -->
+      <section class="services section" id="services">
+        <p class="service_head">SERVICES</p>
+        <h1 class="service_main_header">What Can I do for you</h1>
+        <div class="wrapper container">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/coding.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Web Development</h2>
+              <span
+                >Our web development service creates responsive, user-friendly
+                websites tailored to your needs for optimal online
+                presence.</span
+              >
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/hierarchy.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Data Structures</h2>
+              <span>
+                Our data structure service optimizes data storage, retrieval,
+                and organization for enhanced performance and scalability.
+              </span>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/ui-design.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Frontend Development</h2>
+              <span>
+                Our frontend development service delivers interactive, and
+                user-friendly web interfaces for an enhanced user experience.
+              </span>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/conversation.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Communication</h2>
+              <span
+                >Communication service ensures reliable, and efficient
+                connectivity for seamless interactions across various
+                platforms.</span
+              >
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/images/web.png" alt="img" draggable="false" />
+              </div>
+              <h2>Web Design</h2>
+              <span
+                >Our web design service creates visually stunning, user-friendly
+                websites that enhance user engagement and experience.</span
+              >
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/creator.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Content Creation</h2>
+              <span
+                >Our content creation service delivers engaging, high-quality
+                content to the audience, boosting engagement and brand
+                visibility.</span
+              >
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <!-- ===================================Skills section====================== -->
+      <section class="skills container" id="skills">
+        <div class="skill_sectionc section">
+          <p class="skill_subhead">My Talent</p>
+          <h1 class="skill_head section_title">Professional Skills</h1>
+          <div class="skills_boxs">
+            <div class="skill_box">
+              <i class="fa-brands fa-html5 html"></i>
+              <p class="skill_box_name html">HTML</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-brands fa-css3-alt css"></i>
+              <p class="skill_box_name css">CSS</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-brands fa-js js"></i>
+              <p class="skill_box_name js">JavaScript</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-brands fa-python py"></i>
+              <p class="skill_box_name py">Python</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-regular fa-copyright c"></i>
+              <p class="skill_box_name c">C Language</p>
+            </div>
+          </div>
+          <div class="skills_bar">
+            <div class="skills_name_bar">
+              <div class="skill_bar_names">
+                <i class="fa-brands fa-html5 html"></i>
+                <p class="skills_name html">HTML</p>
+              </div>
+              <div class="skill_bar_names">
+                <i class="fa-brands fa-css3-alt css"></i>
+                <p class="skills_name css">CSS</p>
+              </div>
+              <div class="skill_bar_names">
+                <i class="fa-brands fa-js js"></i>
+                <p class="skills_name js">JavaScript</p>
+              </div>
+              <div class="skill_bar_names">
+                <i class="fa-brands fa-python py"></i>
+                <p class="skills_name py">Python</p>
+              </div>
+              <div class="skill_bar_names">
+                <i class="fa-regular fa-copyright c"></i>
+                <p class="skills_name c">C Language</p>
+              </div>
+            </div>
+            <div class="skills_progress_bar">
+              <div class="progress_bar">
+                <div class="progress_bar_percentage_html">95%</div>
+              </div>
+              <div class="progress_bar">
+                <div class="progress_bar_percentage_css">90%</div>
+              </div>
+              <div class="progress_bar">
+                <div class="progress_bar_percentage_js">75%</div>
+              </div>
+              <div class="progress_bar">
+                <div class="progress_bar_percentage_py">65%</div>
+              </div>
+              <div class="progress_bar">
+                <div class="progress_bar_percentage_c">80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- =======================================Projects Section================================= -->
+       <section class="portfolio container" id="portfolio">
+        <div class="projects_container section">
+          <h1 class="projects_heading">My <span>Latest Projects</span></h1>
+          <div class="projects_boxs grid">
+            <div class="recent_projects">
+              <img src="assets/images/Amazon clone.png" alt="" />
+              <div class="projects_details">
+                <h4>Amazon Clone</h4>
+                <p>
+                  Amazon: vast marketplace offering convenience and diverse
+                  products.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Amazon-clone"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/Netflix clone.png" alt="" />
+              <div class="projects_details">
+                <h4>Netflix Clone</h4>
+                <p>A Netflix clone replicates Netflix's design and features.</p>
+                <a
+                  href="https://github.com/rishikgoud/Netflix-clone"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img
+                src="assets/images/Landing page thumnail codsoft.png"
+                alt=""
+              />
+              <div class="projects_details">
+                <h4>Hotel Landing Page</h4>
+                <p>
+                  A landing page with clear value, compelling visuals, and
+                  intuitive navigation
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Hotel-Landing-page"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/Portfolio logo thumbail.png" alt="" />
+              <div class="projects_details">
+                <h4>Portfolio Website</h4>
+                <p>
+                  Showcase skills and achievements effectively with a polished
+                  portfolio.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Quotes-App"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/weather-img.png" alt="" />
+              <div class="projects_details">
+                <h4>Weather App</h4>
+                <p>
+                  A weather report website using an API provides real-time
+                  weather updates.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/weather-app"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/QR Code img.png" alt="" />
+              <div class="projects_details">
+                <h4>QR Code Generator</h4>
+                <p>
+                  Generate QR codes swiftly for seamless information sharing.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/QR-Generator-App"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/music player img.png" alt="" />
+              <div class="projects_details">
+                <h4>Music Player</h4>
+                <p>
+                  Streamlined music player for seamless listening experience
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Music-player"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/quotes img.png" alt="" />
+              <div class="projects_details">
+                <h4>Quotes Generator</h4>
+                <p>Inspire with dynamic quotes generated instantly</p>
+                <a
+                  href="https://github.com/rishikgoud/Quotes-App"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/password generator logo img.png" alt="" />
+              <div class="projects_details">
+                <h4>Password Generator</h4>
+                <p>
+                  Create secure passwords effortlessly with robust generator
+                  tools.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Password-generator"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================Testimonials section============================== -->
+      <section class="testimonials section">
+        <div class="testimonials_header container">
+          <p>TESTIMONIALS</p>
+          <h1>What My Clients Say</h1>
+        </div>
+        <div class="testimonials_swipper container">
+          <div class="testimonials_box mySwiper">
+            <div class="testimonials_content swiper-wrapper">
+              <div class="testimonials_slide swiper-slide">
+                <img src="assets/images/testimonial1.jpg" />
+                <h3>Rishab Kumar</h3>
+                <p>
+                  Working with T Rishik Goud was fantastic! His frontend
+                  development expertise brought our vision to life beautifully.
+                  His team was responsive, professional, and delivered beyond
+                  our expectations. Highly recommend!
+                </p>
+              </div>
+              <div class="testimonials_slide swiper-slide">
+                <img src="assets/images/testimonial2.jpg" />
+                <h3>K Pravalika</h3>
+                <p>
+                  T Rishik Goud is incredibly reliable and supportive. Always
+                  there when needed and consistently goes above and beyond! His
+                  dedication to learning new coding skills is unmatched, and his
+                  determination shines through in every endeavor he undertakes.
+                </p>
+              </div>
+              <div class="testimonials_slide swiper-slide">
+                <img src="assets/images/testimonial3.jpg" />
+                <h3>Harshwardhan Singh</h3>
+                <p>
+                  T Rishik Goud is an outstanding web developer. His skills
+                  transformed our site, making it sleek and user-friendly.
+                  Always helpful and innovative, he exceeded all expectations.
+                  Highly recommend his expertise!
+                </p>
+              </div>
+              <div class="testimonials_slide swiper-slide">
+                <img src="assets/images/testimonial5.jpg" />
+                <h3>Anushka Raj Kumar</h3>
+                <p>
+                  His coding skills are truly impressive, evident in the
+                  wonderful projects he creates with finesse and precision. He
+                  not only excels in his own work but also extends a helping
+                  hand to friends, readily fixing errors and bugs in their code.
+                </p>
+              </div>
+              <div class="testimonials_slide swiper-slide">
+                <img src="assets/images/testimonial4.jpg" />
+                <h3>Pratik Rai</h3>
+                <p>
+                  T Rishik Goud is an exceptional web developer. His innovative
+                  solutions and unwavering support were invaluable throughout
+                  the project. I highly endorse his talents and dedication!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- ===========================================Contact Section=================================== -->
+      <section class="contact section" id="contact">
+        <div class="section_contact container">
+          <p class="contact_subhead">Let's Talk Together</p>
+          <h1 class="contact_title">Contact Me</h1>
+          <div class="contact_content">
+            <div class="contact_details">
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Call Us</h3>
+                  <p>+91 8784783075</p>
+                </div>
+              </div>
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Email Us</h3>
+                  <p>goudrishik2006@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Address</h3>
+                  <p>Hyderabad, Telangana, India.</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact_form">
+              <form action="">
+                <div class="form_group">
+                  <div class="form_input">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input_control"
+                    />
+                  </div>
+                  <div class="form_input">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input_control"
+                    />
+                  </div>
+                </div>
+                <div class="form_input">
+                  <input
+                    type="text"
+                    placeholder="subject"
+                    class="input_control"
+                  />
+                </div>
+                <div class="form_input">
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Message"
+                    cols="30"
+                    rows="4"
+                    class="input_control textarea"
+                  ></textarea>
+                </div>
+                <button class="btn contact_btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- =========================================footer section================================== -->
+      <footer class="footer" id="footer">
+        <div class="footer_container container">
+          <div class="footer_description">
+            <p class="footer_copyright">
+              &copy; 2024 T Rishik Goud. All Rights are Reserved
+            </div>
+          </p>
+        
+         <div class="footer_social_btns">
+          <a
+            href="https://www.instagram.com/rishik_goud11/?hl=en"
+            class="footer_social_btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/TallaRishi52356"
+            target="_blank"
+            class="footer_social_btn"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rishik-goud-talla/"
+            class="footer_social_btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/rishikgoud"
+            target="_blank"
+            class="footer_social_btn"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
